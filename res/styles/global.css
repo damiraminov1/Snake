@@ -1,3 +1,7 @@
+StartWidget {
+    background-color: darkgrey;
+}
+
 QPushButton {
     background-color: gray;
     border-radius: 5px;
