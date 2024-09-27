@@ -2,6 +2,7 @@ from pathlib import Path
 
 class Settings:
 
+    app_name = "Змейка"
     resolution_x = 800
     resolution_y = 800
 

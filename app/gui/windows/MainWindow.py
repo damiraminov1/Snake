@@ -7,7 +7,7 @@ from settings import settings
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle('Snake - Simple Python Game')
+        self.setWindowTitle(f"{settings.app_name}")
         self.setMinimumSize(settings.resolution_x, settings.resolution_y)
         self.setMaximumSize(settings.resolution_x, settings.resolution_y)
 
