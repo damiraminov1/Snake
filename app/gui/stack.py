@@ -1,7 +1,7 @@
 from PyQt5.QtWidgets import QStackedWidget
 
 from app.gui.widgets.WidgetGame import WidgetGame
-from app.gui.widgets.WidgetStart import StartWidget
+from app.gui.widgets.WidgetStart import WidgetStart
 
 
 class MainStack(QStackedWidget):
@@ -10,7 +10,7 @@ class MainStack(QStackedWidget):
         super().__init__()
 
         self.widgets = {
-            "start": StartWidget("start"),
+            "start": WidgetStart("start"),
             "game": WidgetGame("game"),
         }
 
