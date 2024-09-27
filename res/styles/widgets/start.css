@@ -1,0 +1,13 @@
+StartWidget {
+    background-color: darkgrey;
+}
+
+QLabel {
+    font-size: 100px;
+}
+
+QPushButton {
+    background-color: gray;
+    border-radius: 5px;
+    color: white;
+}

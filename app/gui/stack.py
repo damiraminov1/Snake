@@ -10,8 +10,8 @@ class MainStack(QStackedWidget):
         super().__init__()
 
         self.widgets = {
-            "start": StartWidget(),
-            "game": WidgetGame(),
+            "start": StartWidget("start"),
+            "game": WidgetGame("game"),
         }
 
         self.previous_widget_name = "start"

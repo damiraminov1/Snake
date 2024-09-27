@@ -6,8 +6,8 @@ from settings import settings
 
 
 class StartWidget(WidgetBase):
-    def __init__(self):
-        super().__init__()
+    def __init__(self, name):
+        super().__init__(name)
 
         self.label = QLabel(f"{settings.app_name} 1.0")
         self.layout.addWidget(self.label, alignment=Qt.AlignCenter)
