@@ -1,12 +1,13 @@
 import cairo
 
 from PyQt5.QtGui import QImage, QPainter
-from PyQt5.QtWidgets import QWidget
+
+from app.gui.widgets.base.WidgetBase import WidgetBase
 
 
-class WidgetCairo(QWidget):
+class WidgetCairo(WidgetBase):
     def __init__(self):
-        super().__init__()
+        super().__init__(self)
 
     def draw(self, context):
         pass
