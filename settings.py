@@ -5,6 +5,7 @@ class Settings:
     app_name = "Змейка"
     resolution_x = 800
     resolution_y = 800
+    fps = 60
 
     def __init__(self):
         self.project_path = Path(__file__).parent.absolute()
