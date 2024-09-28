@@ -16,7 +16,7 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(self.stack)
 
     def keyReleaseEvent(self, event):
-        if event.key() == Qt.Key_Escape:
+        if event.key() == Qt.Key_Escape and not self.stack.previous_widget_name != "start":
             self.stack.stack_back()
 
     def show(self):
