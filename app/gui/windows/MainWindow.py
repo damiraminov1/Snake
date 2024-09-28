@@ -1,3 +1,4 @@
+from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QMainWindow
 
 from app.gui.stack import MainStack
@@ -13,6 +14,10 @@ class MainWindow(QMainWindow):
 
         self.stack = MainStack()
         self.setCentralWidget(self.stack)
+
+    def keyReleaseEvent(self, event):
+        if event.key() == Qt.Key_Escape:
+            self.stack.stack_back()
 
     def show(self):
         self.stack.stack_switch("start")

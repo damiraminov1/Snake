@@ -29,5 +29,5 @@ class MainStack(QStackedWidget):
         target_widget = self.widgets[widget_name]
         self.setCurrentWidget(target_widget)
 
-    def back(self):
+    def stack_back(self):
         self.stack_switch(self.previous_widget_name)

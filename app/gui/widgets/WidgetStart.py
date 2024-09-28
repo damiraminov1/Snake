@@ -20,3 +20,8 @@ class WidgetStart(WidgetBase):
 
     def _on_start(self):
         self.parent().stack_switch("game")
+
+    def keyReleaseEvent(self, event):
+        super().keyPressEvent(event)
+        if event.key() == Qt.Key_Return:
+            self.parent().stack_switch("game")
